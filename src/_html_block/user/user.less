@@ -1,0 +1,59 @@
+.user {
+  position: fixed;
+  width: 100%;
+  background: @popupBg;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1000;
+  left: -100%;
+  transition: .3s;
+  top: 0;
+  &.active {
+    left: 0;
+  }
+  &__inner {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 310px;
+    background: @menuBg;
+  }
+  &__info {
+    padding: 35px 10px 35px 20px;
+    display: flex;
+    background: url("../img/user-bg.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    align-items: center;
+  }
+  &__photo {
+    margin: 0 15px 0 0;
+    height: 80px;
+    width: 80px;
+    flex-shrink: 0;
+    border: 2px solid #555;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__name {
+    margin: 0 0 5px;
+    font-size: 20px;
+    line-height: 1;
+    color: @orange;
+  }
+  &__email {
+    color: inherit;
+    text-decoration: none;
+    margin: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,25 @@
+<article class="sign">
+  <div class="wrap">
+    <h1 class="sign__title">Регистрация</h1>
+    <figure class="sign__logo">
+      <img src="img/logo.png" alt="Уличные квесты" width="123" height="91">
+    </figure>
+    <form action="/echo" method="GET" class="form">
+      <figure class="form__field">
+        <input type="text" name="login" placeholder="Логин" class="form__input" required>
+      </figure>
+      <figure class="form__field">
+        <input type="email" name="email" placeholder="Email" class="form__input" required>
+      </figure>
+      <figure class="form__field">
+        <input type="password" name="password" placeholder="Пароль" class="form__input" required>
+      </figure>
+      <figure class="form__field">
+        <input type="text" name="name" placeholder="Имя" class="form__input" required>
+      </figure>
+      <button type="submit" class="btn btn--orange">Зарегистрироваться</button>
+      <p class="form__or">или</p>
+      <a href="login.html" class="btn btn--border">Войти</a>
+    </form>
+  </div>
+</article>

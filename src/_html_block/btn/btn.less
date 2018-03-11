@@ -1,0 +1,40 @@
+.btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 335px;
+  padding: 8.5px 10px;
+  text-decoration: none;
+  color: @col;
+  &--orange {
+    background: @orange;
+  }
+  &--border {
+    border-color: @col;
+  }
+  &:last-child {
+    margin: 0 0 25px;
+  }
+}
+.btn-close {
+  line-height: 20px;
+  border: 0;
+  background: none;
+  padding: 0;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+  }
+}

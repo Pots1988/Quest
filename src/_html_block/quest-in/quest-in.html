@@ -1,0 +1,64 @@
+<section class="quest-in">
+  <div class="wrap">
+    <h1 class="quest-in__title">Квест 1</h1>
+    <header class="quest-in__header">
+      <div class="quest-in__points">
+        <svg width="28" height="28">
+          <use xlink:href="#icon-star" />
+        </svg>
+        <span class="quest-in__point" id="quest-in__point">20</span>
+      </div>
+      <div class="quest-in__hint-list">
+        <button type="button" class="quest-in__hint">
+          <svg width="28" height="28">
+            <use xlink:href="#icon-bulb" />
+          </svg>
+        </button>
+        <button type="button" class="quest-in__hint">
+          <svg width="28" height="28">
+            <use xlink:href="#icon-bulb" />
+          </svg>
+        </button>
+        <button type="button" class="quest-in__hint" disabled>
+        <!-- Атрибут disabled навешиваем, когда попытка использована -->
+          <svg width="28" height="28">
+            <use xlink:href="#icon-bulb" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <div class="quest-in__timer">
+      <span class="quest-in__hours">02</span>
+      <span class="quest-in__min">00</span>
+      <span class="quest-in__sec">00</span>
+    </div>
+    <section class="quest-in__help">
+      <button type="button" class="btn-close">
+        <svg width="20" height="20">
+          <use xlink:href="#icon-cross" />
+        </svg>
+      </button>
+      <h2 class="quest-in__help-title">Подсказка1</h2>
+      <div class="quest-in__help-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</p>
+      </div>
+    </section>
+    <section class="quest-in__task">
+      <figure class="quest-in__img">
+        <img src="img/quests/city-history.jpg" alt="История города">
+      </figure>
+      <div class="quest-in__descr">
+        <h3 class="quest-in__descr-title">Вопрос</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</p>
+      </div>
+      <div class="quest-in__counter">
+        <span class="quest-in__number">1</span> /
+        <span class="quest-in__total">7</span>
+      </div>
+      <form action="/echo" method="post" class="quest-in__form">
+        <input type="text" class="quest-in__input" placeholder="Введите ответ" required>
+        <button type="submit" class="btn btn--orange">Ответить</button>
+      </form>
+    </section>
+  </div>
+</section>

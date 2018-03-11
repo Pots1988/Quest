@@ -1,0 +1,73 @@
+.quests {
+  padding-bottom: 35px;
+  &__list {
+    margin: 0 -10px;
+  }
+  &__item {
+    background: @questBg;
+  }
+  &__header {
+    position: relative;
+  }
+  &__img {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__link {
+    position: absolute;
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px 15px;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  &__name {
+    margin: 0 15px 0 0;
+    font-weight: 300;
+    color: inherit;
+    font-size: inherit;
+    &::before {
+      content: "\201c";
+    }
+    &::after {
+      content: "\201d";
+    }
+  }
+  &__price {
+    color: @orange;
+    margin: 0;
+    flex-shrink: 0;
+  }
+  &__descr {
+    padding: 0 20px;
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 10px;
+      &:last-of-type {
+        margin: 0 0 42px;
+      }
+    }
+  }
+  &__descr-title {
+    font-size: 22px;
+    margin: 0 0 14px;
+    font-weight: inherit;
+  }
+  &__descr-btn {
+    text-align: center;
+  }
+}

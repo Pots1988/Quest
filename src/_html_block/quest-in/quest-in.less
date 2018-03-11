@@ -1,0 +1,192 @@
+.quest-in {
+  background: @questBg;
+  &__title {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+  }
+  &__header {
+    margin: 0 -10px;
+    background: @bg;
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 20px;
+    align-items: center;
+    line-height: 28px;
+  }
+  &__points {
+    svg {
+      width: 28px;
+      height: 28px;
+      display: inline-block;
+      vertical-align: middle;
+      fill: @orange;
+      margin-right: 4px;
+    }
+  }
+  &__point {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 1;
+  }
+  &__hint-list {
+
+  }
+  &__hint {
+    margin-left: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    border: 0;
+    background: none;
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      width: 28px;
+      height: 28px;
+      fill: @orange;
+    }
+    &:first-child {
+      margin: 0;
+    }
+    &:disabled {
+      svg {
+        fill: #333;
+      }
+    }
+  }
+  // Timer
+  &__timer {
+    text-align: center;
+    line-height: 1;
+    font-size: 0;
+    padding: 17px 10px;
+  }
+  &__hours,
+  &__min,
+  &__sec {
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    &::after {
+      content: ":";
+    }
+  }
+  &__sec {
+    &::after {
+      display: none;
+    }
+  }
+  // Help
+  &__help {
+    display: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 10px 10px 15px;
+  }
+  &__help-title {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #666;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 28px;
+  }
+  &__help-text {
+    font-size: 16px;
+    line-height: 1.5;
+    p {
+      margin: 0;
+    }
+  }
+  &__img {
+    margin: 0 -10px 15px;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__descr {
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    p {
+      margin: 0;
+    }
+  }
+  &__descr-title {
+    font-weight: 400;
+    color: @orange;
+    font-size: 22px;
+    line-height: 1.64;
+    margin: 0;
+  }
+  &__counter {
+    text-align: center;
+    font-size: 16px;
+    line-height: 2.25;
+    color: #666;
+    margin: 0 0 10px;
+  }
+  &__form {
+    padding: 0 10px;
+    text-align: center;
+  }
+  &__input {
+    width: 100%;
+    display: block;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #666;
+    color: #666;
+    padding: 5px 11px;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0 0 40px;
+    &.quest-in__error {
+      color: #cc3333;
+      border-bottom-color: #cc3333;
+      &::-webkit-input-placeholder {
+        color: #cc3333;
+      }
+      &::-moz-placeholder{
+        color: #cc3333;
+      }
+      &:-moz-placeholder {
+        color: #cc3333;
+      }
+      &:-ms-input-placeholder {
+        color: #cc3333;
+      }
+    }
+    &::-webkit-input-placeholder {
+      opacity: 1;
+      color: #666;
+    }
+    &::-moz-placeholder{
+      opacity: 1;
+      color: #666;
+    }
+    &:-moz-placeholder {
+      opacity: 1;
+      color: #666;
+    }
+    &:-ms-input-placeholder {
+      opacity: 1;
+      color: #666;
+    }
+  }
+}
+
+
+
+
+

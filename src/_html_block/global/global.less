@@ -1,0 +1,34 @@
+html {
+  font-size: @htmlSize;
+  box-sizing: border-box;
+}
+body {
+  background-color: @bg;
+  font: 300 1em/36px "ProximaNova", Arial, sans-serif;
+  color: @col;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.body {
+  &--sign {
+    background-image: url("../img/bg/iphone6_portrait.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.clearfix::after {
+  display: table;
+  clear: both;
+
+  content: "";
+}
+.wrap {
+  padding: 0 10px;
+}
